@@ -232,6 +232,8 @@ public class LunchTime {
      */
     public String secretLunchCode(int codeLength) {
         // TODO
+        //char 1stchar = (char) ((int) (Math.random() * 26 + 1));
+        
         return "";
     }
 
@@ -305,21 +307,27 @@ public class LunchTime {
 
         // TODO:
         // Create a LunchTime object using the no-argument constructor.
+      LunchTime firstLunch = new LunchTime();
+      
+          // TODO:
+          // Create another LunchTime object using the constructor
+          // with parameters.
+      LunchTime secondLunch = new LunchTime(8,5.4,true,"lovley nugs");
 
-
-        // TODO:
-        // Create another LunchTime object using the constructor
-        // with parameters.
-        //
         // Feel free to invent an appropriately terrible cafeteria
         // entree name.
-
-
+      System.out.println(secondLunch.nuggetPower(2.0));
+      System.out.println(secondLunch.gotEnoughNugs());
+      System.out.println(secondLunch.getEntreeSubstring(0,4));
+      System.out.println(secondLunch.cafeteriaRandomness(1,7));
+      System.out.println(secondLunch.isSameLunch("loving Nugs"));
+      System.out.println(secondLunch.compareLunchNames("loving Nugs"));
+      System.out.println(secondLunch.getEntreeNameLength());
+      //System.out.println(secondLunch.());
         // TODO:
         // Call EVERY non-challenge method at least once.
         //
-        // Print the results so you can verify that your methods work.
-
+        // Print the results so you can verify that your methods work. 
 
         // OPTIONAL:
         // Attempt the four challenges if you are feeling powerful.
